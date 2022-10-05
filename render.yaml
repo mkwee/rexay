@@ -1,3 +1,7 @@
-build:
-  docker:
-    web: Dockerfile
+services:
+- type: web
+  name: mkwee
+  env: docker
+  envVars: # https://docs.ackee.electerious.com/#/docs/Options
+  - key: PORT
+    value: 8888
